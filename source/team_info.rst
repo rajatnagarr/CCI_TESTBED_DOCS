@@ -235,13 +235,13 @@ Postdoc Researchers
 ..    :align: left
 ..    :width: 200px
 
-   Abhimanyu Bhagwati
-**Abhimanyu Bhagwati**
+   Rajat Nagar
+**Rajat Nagar**
 ----------------
 
 
 - Research & Focus: NextG Testbed deployment and development.
-- Abhimanyu Bhagwati is an intern working with the NextG Testbed at the Commonwealth Cyber Initiative. His role involves deploying cloud solutions, supporting proof-of-concept development, and maintaining the CCI webpage.
+- Rajat Nagar is an intern working with the NextG Testbed at the Commonwealth Cyber Initiative. His role involves deploying cloud solutions, supporting proof-of-concept development, and maintaining the CCI webpage.
 |
 |
 |
