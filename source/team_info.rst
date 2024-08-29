@@ -230,10 +230,10 @@ Postdoc Researchers
 |
 
 
-.. figure:: _static/Abhi.jpg
-   :alt: Rohit Kumar
-   :align: left
-   :width: 200px
+.. .. figure:: _static/Abhi.jpg
+..    :alt: Rohit Kumar
+..    :align: left
+..    :width: 200px
 
    Abhimanyu Bhagwati
 **Abhimanyu Bhagwati**
