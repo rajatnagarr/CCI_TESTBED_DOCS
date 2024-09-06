@@ -1,28 +1,27 @@
-Launching OpenStack Instances with USRP Access
-==============================================
+Launching OpenStack Instances
+=============================================================
 
-This documentation provides steps to create and launch OpenStack instances with USRP (Universal Software Radio Peripheral) access, either through the Command-Line Interface (CLI) or the OpenStack dashboard.
+This documentation provides steps to create and launch OpenStack instances with USRP (Universal Software Radio Peripheral) access using the Command-Line Interface (CLI) and generic compute VMs through the OpenStack dashboard.
 
-Keywords: USRP, Instance, OpenStack, CLI, Cloud Computing
+Keywords: USRP, Instance, OpenStack, CLI, Dashboard, Compute VM, Cloud Computing
 
 .. note::
     - Each USRP can only be connected to one instance at a time.
     - Users cannot create an instance with a USRP network unless granted access by an OpenStack admin.
-    - This guide is intended for users on Linux, MacOS, and Windows devices.
+    - This guide is intended for users on Linux, macOS, and Windows devices.
 
-CLI Instructions
-----------------
+CLI Instructions for USRP Access
+--------------------------------
 
-To create an OpenStack instance with USRP access using the Command-Line Interface (CLI), follow the steps below:
+To create an OpenStack instance with **USRP access** using the Command-Line Interface (CLI), follow the steps below:
 
-1. ***Download Your OpenStack RC File**
+1. **Download Your OpenStack RC File**
 
    - Log in to the OpenStack portal: `Link <https://portal.ccixgtestbed.org/auth/login>`_.
    - Download your profile's RC file from the drop-down in the top-right corner.
 
    .. image:: _static/rc_file.gif
       :align: center
-
 
 2. **Install Necessary Dependencies**
 
@@ -78,6 +77,10 @@ To create an OpenStack instance with USRP access using the Command-Line Interfac
 
    This command will prompt you to enter your OpenStack password.
 
+    .. image:: _static/rc_file_command_2.png
+        :align: center
+        :width: 550px
+
 4. **Create an Instance with USRP Access**
 
    Use the following command to create an instance with USRP access:
@@ -90,28 +93,71 @@ To create an OpenStack instance with USRP access using the Command-Line Interfac
 
    For further details, watch the tutorial video: https://youtu.be/NtC79iuUNNI
 
-Dashboard Instructions
-----------------------
+Dashboard Instructions for Compute VM Access
+--------------------------------------------
 
-To create an OpenStack instance with USRP access using the OpenStack dashboard, follow these steps:
+To create a **compute VM** using the **OpenStack dashboard**, follow these steps:
 
 1. **Log in to the OpenStack Dashboard**
 
-   - Access the OpenStack portal: `https://portal.ccixgtestbed.org/auth/login`.
+   - Access the OpenStack portal: `Link <https://portal.ccixgtestbed.org/auth/login>`_.
+
+   .. image:: _static/instance-1.png
+        :align: center
+        :width: 650px
+
    - Navigate to the "Launch Instance" screen under the project section.
 
 2. **Configure Instance Settings**
 
    - Provide a name for the instance.
-   - Select ``radio`` as the availability zone (do not use ``compute``).
-   - Choose the boot source (e.g., ``Ubuntu-20.04-ServerImage``).
-   - Attach the appropriate USRP port to the instance.
+   - Select ``compute`` as the availability zone (for generic VMs, not ``radio``).
+   
+   .. image:: _static/instance-2.png
+        :align: center
+        :width: 650px
 
-   .. image:: https://cci-xg-testbed-cci-testbed-docs.readthedocs-hosted.com/en/latest/_images/launchInstance.png
+3. **Select Boot Source**
 
-3. **Launch the Instance**
+   - In the "Source" tab, select the appropriate boot source (e.g., an image or snapshot).
+   - Set "Create New Volume" to "Yes" or "No" depending on your requirements.
+   - Choose the boot source (e.g., ``Ubuntu-18.04-ServerImage``).
 
-   After configuring the settings, click the **Launch Instance** button to provision the instance with USRP access.
+   .. image:: _static/instance-3.png
+        :align: center
+        :width: 650px
+
+4. **Select Flavor**
+
+   - Choose the flavor according to the VM's resource requirements (vCPUs, RAM, disk size).
+
+   .. image:: _static/instance-4.png
+        :align: center
+        :width: 650px
+
+5. **Select Network**
+
+   - Choose the appropriate network for your instance.
+
+   .. image:: _static/instance-5.png
+        :align: center
+        :width: 650px
+
+6. **Configure Security Groups**
+
+   - Select the desired security group(s) for the instance.
+
+   .. image:: _static/instance-6.png
+        :align: center
+        :width: 650px
+
+7. **Launch the Instance**
+
+   After configuring all settings, click the **Launch Instance** button to provision the instance.
+
+   .. image:: _static/instance-7.png
+        :align: center
+        :width: 650px
 
 .. note::
-    If you encounter any issues with the OpenStack dashboard, login credentials, or USRP port access, raise a ticket in Redmine or contact the administrator at `cci.xg.testbed.admin@cyberinitiative.org`.
+    If you encounter any issues with the OpenStack dashboard, login credentials, or network access, raise a ticket in Redmine or contact the administrator at `cci.xg.testbed.admin@cyberinitiative.org`.
