@@ -120,7 +120,7 @@ Director
 |
 
 
-Master's Researcher
+Master's Researchers
 ===================
 
 .. figure:: _static/abida.jpg
@@ -163,7 +163,7 @@ Master's Researcher
 |
 |
 
-Postdoc Researchers
+Postdoc Researcher
 ===================
 |
 |

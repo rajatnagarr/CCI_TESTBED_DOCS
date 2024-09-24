@@ -27,7 +27,7 @@ The CCI xG Testbed supports several new classes of wireless experiments not curr
 Here is the revised document with the provided text and figures integrated:
 
 
-PHYSICAL LAYOUT AND ARCHITECTURE OF LAB(S)
+Physical Layout and Architecture of the Lab(s)
 ===========================================
 
 The OTIC architecture focuses on ultra-high bandwidth and low latency wireless communication coupled with edge-cloud computing. The main outdoor OTIC facility is located at Stroubles Creek Park, Virginia Tech main campus, Blacksburg, VA. It features advanced SDR nodes, fiber-optic networks, and edge and core cloud computing infrastructure. The indoor facility has numerous processing elements (CPUs and GPUs) near the radios. Core testbed services are deployed on computing clusters at the CCI xG Testbed facility in Washington DC/Arlington VA. Researchers can access the OTIC testbed remotely via VPN, providing various facilities for experiment execution, measurements, and data collection.
